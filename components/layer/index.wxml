@@ -1,0 +1,8 @@
+<view class="layer-container {{show ? '' : 'none'}}">
+  <view class="layer-popup">
+    <view class="mask" catchtap="hide"></view>
+    <view class="layer-content {{ cls }}">
+      <slot></slot>
+    </view>
+  </view>
+</view>

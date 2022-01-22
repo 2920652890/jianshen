@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#0245a0",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "会员续费",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "card": "../../../components/card/index"
+  }
+}

@@ -1,0 +1,32 @@
+/* page {
+  background-color: #0245a0;
+} */
+
+.logo {
+  margin: 300rpx 62rpx 0 62rpx;
+  width: initial;
+  height: initial;
+}
+.submit {
+  position: fixed;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 40rpx;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  color: #fff;
+  background-color: #0245a0;
+  border: 1px solid #fff;
+}
+/* .submit {
+  position: fixed;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 140rpx;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  color: #333333;
+  background-color: #fff;
+} */

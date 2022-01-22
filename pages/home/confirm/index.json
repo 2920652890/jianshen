@@ -1,0 +1,11 @@
+{
+  "navigationBarBackgroundColor": "#0245a0",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "确认订单",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "card": "../../../components/card/index",
+    "switcher": "./components/switcher/index"
+  }
+}

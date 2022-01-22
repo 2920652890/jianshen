@@ -1,0 +1,3 @@
+<view class="card-page">
+    <card wx:for="{{list}}" wx:key="index" item="{{item}}" bindbubble="bubble"></card>
+</view>

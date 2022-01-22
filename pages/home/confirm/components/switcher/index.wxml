@@ -1,0 +1,3 @@
+<view class="switch__wrap {{value ? '' : 'is-checked'}}" bindtap="isChecked">
+    <view class="switch__core"></view>
+</view>

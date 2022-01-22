@@ -1,0 +1,87 @@
+<scroll-view class="home-page pbc" scroll-y="{{true}}">
+    <view class="banner">
+        <view class="shadow">
+            <swiper indicator-dots="{{true}}" indicator-active-color="#fff" autoplay="{{true}}" circular="{{true}}">
+            <swiper-item>
+                    <view url="../banner/index">
+                        <image src="./img/221.jpg" mode="widthFix" />
+                    </view>
+                </swiper-item>
+                <swiper-item>
+                    <navigator url="../b1/index">
+                        <image src="./img/222.jpg" mode="widthFix" />
+                    </navigator>
+                </swiper-item>
+                <!-- <swiper-item>
+                    <navigator url="../../rank/index/index" open-type="switchTab">
+                        <image src="./img/sp1.png" mode="widthFix" />
+                    </navigator>
+                </swiper-item> -->
+                <swiper-item>
+                    <navigator url="../b2/index">
+                        <image src="./img/223.jpg" mode="widthFix" />
+                    </navigator>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="menu">
+            <view class="menu-item" bindtap="open">
+                <image src="./img/t1.png" />
+                <text>开门</text>
+            </view>
+            <navigator url="../../user/record/index" class="menu-item">
+                <image src="./img/t2.png" />
+                <text>运动记录</text>
+            </navigator>
+            <navigator url="../card/index" class="menu-item">
+                <image src="./img/t3.png" />
+                <text>会员续费</text>
+            </navigator>
+            <navigator url="../recommend/index" class="menu-item">
+                <image src="./img/t4.png" />
+                <text>推荐有礼</text>
+            </navigator>
+        </view>
+    </view>
+    <view class="getLocation_btn" bindtap="getLocation" wx:if="{{disable}}">获取定位</view>
+    <view class="store" wx:if="{{!disable}}">
+        <view class="title">
+            <view class="f1">附近门店</view>
+            <!-- <navigator class="span">查看更多</navigator> -->
+        </view>
+        <view class="list">
+            <navigator url="../store/index?gymId={{item.gymId}}" class="item" wx:for="{{list}}" wx:key="index">
+                <view class="img">
+                    <image src="{{baseImgUrl}}/{{item.imgUrl[0]}}" />
+                    <view class="num ell">
+                        <text wx:if="{{item.avatarList.length == 0}}">店中暂时无人</text>
+                        <text wx:else>当前店内人数：{{item.userNum || 0}}人</text>
+                    </view>
+                </view>
+                <view class="f1">
+                    <view class="h1 ell">{{item.gymName}}</view>
+                    <view class="h2">
+                        <image class="address" src="../../../assets/address.png" />
+                        <view class="f1 ">{{item.gymAddress}}</view>
+                    </view>
+                    <view class="h3 ell">
+                        <text>营业时间:{{item.openingHours}}</text>
+                        <text class="s2">店面面积:{{item.gymArea}}</text>
+                    </view>
+                    <view class="user-box">
+                        <user-head list="{{item.avatarList}}"></user-head>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</scroll-view>
+<qrcode id="QRcode" userId="{{userId}}" />
+<view class="mask {{show ? '' : 'none'}}">
+    <view class="mask-box">
+        <image src="./img/tz.png"></image>
+        <view class="h2">通知</view>
+        <view class="h1" style="color:{{fontColor}};">{{content}}</view>
+        <view bindtap="toggle" class="close {{text == '确定' ? 'active' : ''}}">{{text}}</view>
+    </view>
+</view>

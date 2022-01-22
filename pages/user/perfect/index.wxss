@@ -1,0 +1,45 @@
+page {
+  background-color: #f5f5f5;
+}
+.perfect-page {
+  padding-top: 28rpx;
+  padding-bottom: 140rpx;
+}
+.perfect-page .user-info-list {
+  background-color: #fff;
+  padding-left: 30rpx;
+  color: #666666;
+}
+.perfect-page .user-info-list .item {
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  height: 100rpx;
+  padding-right: 40rpx;
+}
+.perfect-page .user-info-list .item .label {
+  width: 120rpx;
+}
+.perfect-page .user-info-list .item .send {
+  width: 168rpx;
+  height: 56rpx;
+  background: #0345a1;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 56rpx;
+}
+.perfect-page .user-info-list .item .iconfont {
+  font-size: 40rpx;
+}
+.perfect-page .user-info-list .nb {
+  border-bottom: none;
+}
+.footer {
+  position: fixed;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 20rpx;
+}

@@ -1,0 +1,18 @@
+<view class="header">
+    <image class="bg" src="./img/bg.png"></image>
+    <view class="icon">
+        <image src="./img/b1.png"></image>
+        <image src='./img/b2.png' class="b2" />
+        <view class="text">已封禁</view>
+    </view>
+</view>
+<view class="h2">您的账户已被封！</view>
+<view class="section">
+    <view class="p">
+        封号理由：
+        <text style="color:{{fontColor}};">{{content}}</text>
+    </view>
+    <view class="p">封号开始时间：{{startTime}}</view>
+    <view class="p">封号结束时间：{{endTime}}</view>
+</view>
+<view class="call" bindtap="call">如开门出现问题，请联系客服：13774320034</view>

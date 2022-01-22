@@ -1,0 +1,60 @@
+<view class="rank-page">
+    <view class="header">
+        <view class="menu">
+            <view class="item {{type == item.v ? 'active' : ''}}" data-item="{{item}}" bindtap="change" wx:for="{{typeList}}" wx:key="index">
+                {{item.n}}
+            </view>
+        </view>
+        <view class="tpbox">
+            <navigator url="../../user/rankDetail/index" class="title">
+                <view class="t1">
+                    我的排行
+                    <!-- <view class="tips">
+                        <text>奖励方法</text>
+                        <image src="./img/wenhao.png" />
+                    </view> -->
+                </view>
+                <image class="wenh" src="./img/wenhao.png" />
+            </navigator>
+            <view class="total">
+                <view class="item">
+                    <view class="p">月度排行</view>
+                    <view class="h2">{{info.monthRank || '-'}}</view>
+                </view>
+                <view class="item">
+                    <view class="p">季度排行</view>
+                    <view class="h2">{{info.seasonRank || '-'}}</view>
+                </view>
+                <!-- <view class="item">
+                    <view class="p">半年排行</view>
+                    <view class="h2">{{info.halfYearRank || '-'}}</view>
+                </view> -->
+                <view class="item">
+                    <view class="p">全年排行</view>
+                    <view class="h2">{{info.oneYearRank || '-'}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view style="height: 164rpx;"></view>
+    <view class="list">
+        <view class="item {{ userId == item.userId ? 'active' : '' }}" wx:for="{{list}}" wx:key="index">
+            <image wx:if="{{index < 3}}" src="./img/{{index + 1}}.png" class="num" />
+            <view wx:if="{{index > 2}}" class="num">{{index + 1}}</view>
+            <image class="head" src="{{item.avatarUrl}}" />
+            <view class="f1">
+                <view class="h1">{{item.username}}</view>
+                <view class="h2">
+                    <text>{{item.hour}}</text>
+                    <text class="span">小时</text>
+                    <text>{{item.min}}</text>
+                    <text class="span">分钟</text>
+                </view>
+                <view class="h3">最近一次健身时间：{{item.lastFitnessTimeStr}}</view>
+            </view>
+            <view class="right">
+                <view>{{item.fitnessTimes}}次</view>
+            </view>
+        </view>
+    </view>
+</view>

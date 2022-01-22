@@ -1,0 +1,9 @@
+<view class="home-navbar">
+  <view class="home-navbar-inner" style="padding-top:{{statusBarHeight}}px;">
+    <view class="navbar-box" style="height:{{navHeight}}px;">
+      <view class="navbar-left-icon" style="left:{{left}}px" bindtap="onBack">
+        <text class="iconfont iconarrow-lift"></text>
+      </view>
+    </view>
+  </view>
+</view>

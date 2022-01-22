@@ -1,0 +1,13 @@
+<view class="comm-card" bindtap="handler">
+    <image src="{{baseImgUrl}}{{item.productImg}}" />
+    <view class="sale" wx:if="{{item.productId  != 1}}">
+        {{ item.productId == 2 ? '5.8折' : '推荐' }}
+    </view>
+    <view class="nm">{{item.productName}}</view>
+    <view class="msg">
+        {{item.vipDays}}天卡
+        <text>{{item.productPrice / 100 || 0}}</text>
+        元
+    </view>
+    <view class="msg2">{{item.productDesc}}</view>
+</view>

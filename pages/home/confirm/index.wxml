@@ -1,0 +1,57 @@
+<view class="confirm-page">
+    <card item="{{info}}"></card>
+    <view class="section">
+        <view class="open">
+            <view class="f1">
+                <text>积分抵扣</text>
+                <text class="span">当前可用积分：{{info.integral || 0}}</text>
+            </view>
+            <switcher bindchange="change" />
+        </view>
+        <view class="msg">
+            <view class="col">
+                <view class="f1">推荐有礼</view>
+                <view>
+                    -¥{{info.haveInvitedDiscount ? info.productFirstDiscount / 100 || 0 : 0}}
+                </view>
+            </view>
+            <view class="wrap">
+                <view class="col" bindtap="show">
+                    <view class="f1">优惠券</view>
+                    <view>-¥{{coupon.discount / 100 || 0}}</view>
+                    <text class="iconfont down iconarrow-down {{down ? '' : 'up'}}"></text>
+                </view>
+                <view class="slidedown {{down ? '' : 'active'}}">
+                    <view class="discount" wx:for="{{couponList}}" wx:key="index" data-item="{{item}}" bindtap="chooseCoupon">
+                        <view class="f1">{{item.discount / 100 || 0}}元优惠券</view>
+                        <view class="cir {{couponId == item.couponId ? 'active' : ''}}"></view>
+                    </view>
+                    <view class="discount" bindtap="clearCoupon">
+                        <view class="f1">不使用优惠券</view>
+                        <view class="cir {{ !couponId ? 'active' : ''}}"></view>
+                    </view>
+                </view>
+            </view>
+            <view class="col nbd">
+                <view class="f1">使用积分</view>
+                <view>-¥{{discount}}</view>
+            </view>
+        </view>
+        <view class="shuoming" bindtap="toggle">
+            <view class="cir {{read ? 'active':''}}"></view>
+            <text>我已阅读并同意</text>
+            <text catchtap="goWeb">
+                <text class="span">《得耐会员协议》</text>
+                <text class="span">和</text>
+                <text class="span">《得耐隐私政策》</text>
+            </text>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <view class="f1">
+        <text>您需要支付：</text>
+        <text class="span">¥{{total}}</text>
+    </view>
+    <view class="submit" bindtap="submit">确定</view>
+</view>

@@ -1,0 +1,96 @@
+page {
+  background-color: #f7f4f8;
+}
+.record-page .header {
+  height: 610rpx;
+  background-color: #0245a0;
+  padding: 40rpx 44rpx 0 28rpx;
+  color: #fff;
+}
+.record-page .header .head {
+  display: flex;
+  align-items: center;
+}
+.record-page .header .head .f1 {
+  font-size: 52rpx;
+}
+.record-page .header .head image {
+  border: 4rpx solid #fff;
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+}
+.record-page .header .tip {
+  display: flex;
+  margin-top: 40rpx;
+}
+.record-page .header .tip .h3 {
+  font-size: 28rpx;
+}
+.record-page .header .tip .h1 {
+  font-size: 76rpx;
+  margin-top: 10rpx;
+}
+.record-page .header .tip .span {
+  margin: 0 10rpx;
+  color: #6c7ea5;
+  font-size: 24rpx;
+}
+.record-page .header .cal {
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 44rpx;
+}
+.record-page .header .cal image {
+  width: 38rpx;
+  height: 34rpx;
+  margin-right: 16rpx;
+}
+.record-page .list {
+  margin-top: -128rpx;
+  padding: 0 20rpx;
+}
+.record-page .list .item {
+  padding: 30rpx 30rpx 30rpx 40rpx;
+  height: 230rpx;
+  font-size: 24rpx;
+  color: #706d70;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.record-page .list .item .block {
+  display: flex;
+}
+.record-page .list .item .block .f2 {
+  flex: 2;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+.record-page .list .item .block .f1,
+.record-page .list .item .block .f2 {
+  padding-left: 40rpx;
+}
+.record-page .list .item .block .mt8 {
+  margin-top: 16rpx;
+}
+.record-page .list .item .block .unit {
+  color: #b4b4b6;
+  margin-bottom: 4rpx;
+  position: relative;
+}
+.record-page .list .item .block .unit image {
+  position: absolute;
+  height: initial;
+  left: -40rpx;
+  top: 3rpx;
+}
+.record-page .list .item .block .unit .i1 {
+  width: 28rpx;
+}
+.record-page .list .item .block .unit .i2 {
+  width: 24rpx;
+}
+.record-page .list .item .block .unit .i3 {
+  width: 28rpx;
+}

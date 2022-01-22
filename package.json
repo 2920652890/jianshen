@@ -1,0 +1,13 @@
+{
+  "name": "fitness",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "home": "wxss ./pages/system/home"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wxss-cli": "^1.0.4"
+  }
+}

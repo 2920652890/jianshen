@@ -1,0 +1,74 @@
+<view class="user-page">
+    <view class="header">
+        <image src="./img/bg.png" mode="widthFix" />
+        <view class="header2">
+            <image src="./img/bg2.png" />
+            <view class="nav">
+                <image src="{{info.avatarUrl}}" class="head" />
+                <view class="h1">{{info.username}}</view>
+                <view class="h2">
+                    <text>会员到期时间：</text>
+                    <text>{{info.vipEndTime}}</text>
+                </view>
+                <view class="menu">
+                    <view class="item">
+                        <view class="h3">{{info.exerciseHourCount || 0}}</view>
+                        <view class="h4">运动时长(小时)</view>
+                    </view>
+                    <view class="item">
+                        <view class="h3">{{info.integral || 0}}</view>
+                        <view class="h4">积分</view>
+                    </view>
+                    <navigator url="../coupons/index" class="item">
+                        <view class="h3">{{info.couponCount || 0}}</view>
+                        <view class="h4">优惠券</view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="list">
+        <navigator url="../recommend/index" class="item">
+            <view class="img">
+                <image src="./img/s1.png" mode="widthFix" />
+            </view>
+            <view class="f1">推荐记录</view>
+            <text class="iconfont right iconarrow-right"></text>
+        </navigator>
+        <navigator url="../record/index" class="item">
+            <view class="img">
+                <image src="./img/s2.png" mode="widthFix" />
+            </view>
+            <view class="f1">运动记录</view>
+            <text class="iconfont right iconarrow-right"></text>
+        </navigator>
+        <navigator url="../integral/index" class="item">
+            <view class="img">
+                <image src="./img/s3.png" mode="widthFix" />
+            </view>
+            <view class="f1">积分记录</view>
+            <text class="iconfont right iconarrow-right"></text>
+        </navigator>
+        <navigator class="item" url="../order/index">
+            <view class="img">
+                <image src="./img/s5.png" mode="widthFix" />
+            </view>
+            <view class="f1">订单记录</view>
+            <text class="iconfont right iconarrow-right"></text>
+        </navigator>
+        <navigator url="../perfect/index" class="item">
+            <view class="img">
+                <image src="./img/s4.png" mode="widthFix" />
+            </view>
+            <view class="f1">完善信息</view>
+            <text class="iconfont right iconarrow-right"></text>
+        </navigator>
+        <button open-type="contact" class="item" hover-class="none">
+            <view class="img">
+                <image src="./img/s6.png" mode="widthFix" />
+            </view>
+            <view class="f1">我的客服</view>
+            <text class="iconfont right iconarrow-right"></text>
+        </button>
+    </view>
+</view>

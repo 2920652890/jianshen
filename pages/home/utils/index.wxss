@@ -1,0 +1,46 @@
+page {
+  background-color: #f7f4f8;
+}
+.equipment-page {
+  padding: 0 20rpx;
+}
+.equipment-page .item {
+  margin-top: 20rpx;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  height: 206rpx;
+  padding: 38rpx 0 0 38rpx;
+  font-size: 24rpx;
+  color: #666;
+  position: relative;
+}
+.equipment-page .item:last-child {
+  margin-bottom: 20rpx;
+}
+.equipment-page .item image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 36rpx;
+}
+.equipment-page .item .f1 {
+  padding-top: 8rpx;
+}
+.equipment-page .item .f1 .h1 {
+  font-size: 28rpx;
+  color: #000;
+  margin-bottom: 18rpx;
+}
+.equipment-page .item .submit {
+  width: 134rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  background: #0345a1;
+  right: 34rpx;
+  bottom: 20rpx;
+  position: absolute;
+}

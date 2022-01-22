@@ -1,0 +1,12 @@
+<view class="home-navbar" style="height:{{statusBarHeight + navHeight + pd}}px;">
+  <view class="home-navbar-inner" style="padding-top:{{statusBarHeight}}px;">
+    <view class="navbar-box" style="height:{{navHeight}}px;">
+      <view class="navbar-left-icon" style="left:{{left}}px">
+        <view>杭州</view>
+        <text class="iconfont iconarrow-down"></text>
+      </view>
+      <view class="home-title" style="font-size:{{fs}}px;font-weight:{{fw}}">{{title}}</view>
+    </view>
+    <view style="height:{{pd}}px"></view>
+  </view>
+</view>

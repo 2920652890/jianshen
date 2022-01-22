@@ -1,0 +1,17 @@
+<view class="maintenance-page">
+    <view class="list">
+        <view class="item" wx:for="{{list}}" wx:key="index">
+            <image src="{{item}}" />
+            <text class="close iconfont iconguanbi" bindtap="remove" data-index="{{index}}"></text>
+        </view>
+        <view class="item add" bindtap="add"></view>
+    </view>
+    <view class="msg">
+        <textarea placeholder="请描述下具体问题..." bindinput="input"></textarea>
+    </view>
+    <view class="address">
+        <image src="../../../assets/address.png" />
+        <view class="f1 ell">{{gymAddress}}</view>
+    </view>
+    <view class="submit" bindtap="submit">提交</view>
+</view>

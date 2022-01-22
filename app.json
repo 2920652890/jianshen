@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/home/ban/index",
+    "pages/home/b1/index",
+    "pages/home/b2/index",
+    "pages/home/banner/index",
+    "pages/home/success/index",
+    "pages/home/qrcode/index",
+    "pages/home/confirm/index",
+    "pages/home/agreement/index",
+    "pages/home/card/index",
+    "pages/user/index/index",
+    "pages/user/perfect/index",
+    "pages/user/recommend/index",
+    "pages/user/record/index",
+    "pages/home/form/index",
+    "pages/home/utils/index",
+    "pages/home/store/index",
+    "pages/home/recommend/index",
+    "pages/home/map/index",
+    "pages/user/rankDetail/index",
+    "pages/user/integral/index",
+    "pages/user/coupons/index",
+    "pages/rank/index/index",
+    "pages/user/order/index",
+    "pages/login/index"
+  ],
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "得耐健身",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9b989c",
+    "selectedColor": "#333033",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "text": "首页",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/homeActive.png"
+      },
+      {
+        "pagePath": "pages/rank/index/index",
+        "text": "排行榜",
+        "iconPath": "assets/rank.png",
+        "selectedIconPath": "assets/rankActive.png"
+      },
+      {
+        "pagePath": "pages/user/index/index",
+        "text": "我的",
+        "iconPath": "assets/user.png",
+        "selectedIconPath": "assets/userActive.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "permission": {},
+  "sitemapLocation": "sitemap.json"
+}

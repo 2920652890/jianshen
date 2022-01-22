@@ -1,0 +1,54 @@
+page {
+  background-color: #f5f5f5;
+}
+.order-page {
+  padding: 0 20rpx;
+}
+.order-page .item {
+  margin-bottom: 28rpx;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  height: 206rpx;
+  padding: 38rpx 34rpx;
+  display: flex;
+  background-color: #fff;
+  position: relative;
+  margin: 28rpx 0;
+}
+.order-page .item .img {
+  width: 130rpx;
+  height: 130rpx;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-right: 26rpx;
+}
+.order-page .item .img .span {
+  font-size: 24rpx;
+  position: absolute;
+  left: 12rpx;
+  top: 12rpx;
+  color: #fff;
+}
+.order-page .item .f1 {
+  padding-top: 8rpx;
+}
+.order-page .item .f1 .h1 {
+  font-size: 28rpx;
+}
+.order-page .item .f1 .h2 {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+.order-page .item .f1 .h3 {
+  font-size: 20rpx;
+  color: #999;
+}
+.order-page .item .money {
+  position: absolute;
+  right: 44rpx;
+  bottom: 40rpx;
+  font-size: 32rpx;
+  color: #666;
+}

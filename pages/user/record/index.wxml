@@ -1,0 +1,71 @@
+<view class="record-page">
+    <view class="header">
+        <view class="head">
+            <view class="f1">我的运动记录</view>
+            <image src="{{info.avatarUrl}}" />
+        </view>
+        <view class="tip">
+            <view class="f1">
+                <view class="h3">总运动</view>
+                <view class="h1">
+                    <text>{{info.hour}}</text>
+                    <text class="span">小时</text>
+                    <text>{{info.minute}}</text>
+                    <text class="span">分钟</text>
+                </view>
+            </view>
+            <view>
+                <view class="h3">总次数</view>
+                <view class="h1">
+                    <text>{{info.fitnessCount}}</text>
+                    <text class="span">次</text>
+                </view>
+            </view>
+        </view>
+        <view class="cal">
+            <image src="./img/cal.png" />
+            最近一次健身时间：{{perv}}
+        </view>
+    </view>
+    <block wx:if="{{load}}">
+        <view class="list" wx:if="{{list.length > 0}}">
+            <view class="item" wx:for="{{list}}" wx:key="index">
+                <view class="block">
+                    <view class="f2">
+                        <view>
+                            <view class="unit">
+                                <image class="i1" src="./img/clock.png" mode="widthFix" />
+                                时间：
+                            </view>
+                            <view>{{item.startTime}}</view>
+                        </view>
+                        <view class="mt8">
+                            <view class="unit">
+                                <image class="i2" src="./img/ads.png" mode="widthFix" />
+                                地点：
+                            </view>
+                            <view class="ell">{{item.gymAddress}}</view>
+                        </view>
+                    </view>
+                    <view class="f1">
+                        <view>
+                            <view class="unit">
+                                <image class="i3" src="./img/time.png" mode="widthFix" />
+                                时长：
+                            </view>
+                            <view>运动了{{item.long}}分钟</view>
+                        </view>
+                        <view class="mt8">
+                            <view class="unit">
+                                <image class="i3" src="./img/jf.png" mode="widthFix" />
+                                积分：
+                            </view>
+                            <view>获得了{{item.integral}}个积分</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:else class="tps">您还没有健身过，赶紧试试吧？</view>
+    </block>
+</view>

@@ -1,0 +1,32 @@
+<view class="perfect-page">
+    <view class="user-info-list">
+        <view class="item">
+            <view class="label">手机号</view>
+            <input class="f1" type="number" value="{{form.phone}}" bindinput="input" data-key="phone" />
+            <view class="send" bindtap="sendCode">{{send}}</view>
+        </view>
+        <view class="item">
+            <view class="label">验证码</view>
+            <input class="f1" bindinput="input" data-key="verifyCode" />
+        </view>
+        <view class="item">
+            <view class="label">姓名</view>
+            <input class="f1" value="{{form.username}}" bindinput="input" data-key="username" />
+        </view>
+        <picker bindchange="change" value="{{form.gender}}" range="{{array}}">
+            <view class="item">
+                <view class="label">性别</view>
+                <view class="f1">{{array[form.gender]}}</view>
+                <text class="iconfont iconarrow-down"></text>
+            </view>
+        </picker>
+        <picker bindchange="changeTime" mode="date" value="{{form.birth}}" end="{{now}}">
+            <view class="item nb">
+                <view class="label">生日</view>
+                <view class="f1">{{form.birth}}</view>
+                <text class="iconfont iconarrow-down"></text>
+            </view>
+        </picker>
+    </view>
+</view>
+<view class="footer sub" bindtap="submit">保存</view>

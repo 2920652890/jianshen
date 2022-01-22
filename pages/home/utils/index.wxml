@@ -1,0 +1,10 @@
+<view class="pbc equipment-page">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+        <image src="{{baseImgUrl}}{{item.apparatusImg}}" />
+        <view class="f1">
+            <view class="h1">{{item.apparatusName}}</view>
+            <view>在使用期间发生故障请立即报修</view>
+        </view>
+        <view bindtap="go" data-item="{{item}}" class="submit">报修</view>
+    </view>
+</view>

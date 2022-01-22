@@ -1,0 +1,27 @@
+<view class="integral-page">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+        <image src="./img/t1.png" wx:if="{{item.integralType == 1}}" />
+        <image src="./img/t2.png" wx:if="{{item.integralType == 2}}" />
+        <view class="f1">
+            <view class="h1">{{item.integralDesc}}</view>
+            <view class="h2">{{item.createTime}}</view>
+        </view>
+        <view class="num">{{item.integralType == 1 ? '+' : '-'}}{{item.integral}}</view>
+    </view>
+    <view class="tip" bindtap="toggle">
+        <text>什么是积分？</text>
+        <image src="./img/t3.png" />
+    </view>
+</view>
+<view class="mask {{ show ? '' : 'none' }}">
+    <view class="toast-wrapper" bindtap="toggle">
+        <view class="toast-content" catchtap="handleTap">
+            <view>积分获得：</view>
+            <view>1.每天会员首次进入健身房，获得3个积分</view>
+            <view>2.每天累计健身时间超过1小时，获得2个积分</view>
+            <view class="mt-5">使用规则：</view>
+            <view>1.积分仅可用于购买会员时的会费抵扣，1个积分可以抵用0.1元</view>
+            <view>2.积分不可兑换成现金</view>
+        </view>
+    </view>
+</view>

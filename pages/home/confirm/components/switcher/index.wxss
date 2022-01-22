@@ -1,0 +1,33 @@
+.is-checked .switch__core {
+  border-color: rgba(215, 31, 26, 1);
+  background-color: rgba(215, 31, 26, 1);
+}
+.is-checked .switch__core:after {
+  left: 2rpx;
+  margin-left: 38rpx;
+}
+.switch__core {
+  position: relative;
+  width: 80rpx;
+  height: 40rpx;
+  border: 1px solid #dcdfe6;
+  outline: none;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  background: #dcdfe6;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+  vertical-align: middle;
+}
+.switch__core:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  margin-left: -72rpx;
+  left: 100%;
+  border-radius: 100%;
+  transition: all 0.3s;
+  width: 32rpx;
+  height: 32rpx;
+  background-color: #fff;
+}

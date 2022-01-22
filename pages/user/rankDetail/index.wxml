@@ -1,0 +1,83 @@
+<view class="detail-page" wx:if="{{end}}">
+    <view class="header">
+        <image src="./img/bg.png" mode="widthFix" />
+        <view class="section">
+            <image class="head" src="{{info.avatarUrl}}" />
+            <view class="nm">{{info.username}}</view>
+            <view class="menu">
+                <view class="item">
+                    <view class="p">月度排行</view>
+                    <view class="h2">{{info.monthRank || '-'}}</view>
+                </view>
+                <view class="item">
+                    <view class="p">季度排行</view>
+                    <view class="h2">{{info.seasonRank || '-'}}</view>
+                </view>
+                <!-- <view class="item">
+                    <view class="p">半年排行</view>
+                    <view class="h2">{{info.halfYearRank || '-'}}</view>
+                </view> -->
+                <view class="item">
+                    <view class="p">全年排行</view>
+                    <view class="h2">{{info.oneYearRank || '-'}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="msg">
+        <image class="block" src="/assets/2221.png" mode="widthFix" />
+        <!--<view class="h1">规则说明:</view>
+        <view>1.季度排名的计算周期为：第一季度为1月1日到3月31日，第二季度为4月1日到6月30日，第三季度为7月1日到9月30日，第四季度为10月1日到12月31日</view>
+        <view>2.年度排名的计算周期为1月1日到12月31日</view>
+        <view>3.奖励仅针对季度以及年度进行，规则如下：</view>
+        <view class="table">
+            <view class="col">
+                <view class="f1">
+                    <view>
+                        <text class="red">季度排名</text>
+                    </view>
+                </view>
+                <view class="f5">
+                    <view class="list">
+                        <view class="item">运动时长季度冠军</view>
+                        <view class="item">运动时长季度亚军</view>
+                        <view class="item">运动时长季度季军</view>
+                        <view class="item">运动时长季度4-10名</view>
+                        <view class="item"></view>
+                    </view>
+                    <view class="list">
+                        <view class="item">60元优惠券</view>
+                        <view class="item">40元优惠券</view>
+                        <view class="item">20元优惠券</view>
+                        <view class="item">10元优惠券</view>
+                        <view class="item"></view>
+                    </view>
+                </view>
+            </view>
+            <view class="col">
+                <view class="f1">
+                    <view>
+                        <text class="red">年度排名</text>
+                    </view>
+                </view>
+                <view class="f5">
+                    <view class="list">
+                        <view class="item">运动时长年度冠军</view>
+                        <view class="item">运动时长季度亚军</view>
+                        <view class="item">运动时长季度季军</view>
+                        <view class="item">运动时长季度4-10名</view>
+                        <view class="item">运动时长年度11-20名</view>
+                    </view>
+                    <view class="list">
+                        <view class="item">运动耳机+30日会员</view>
+                        <view class="item">运动手环+25日会员</view>
+                        <view class="item">电子称+20日会员</view>
+                        <view class="item">运动水壶+10日会员</view>
+                        <view class="item">指尖陀螺+7日会员</view>
+                    </view>
+                </view>
+            </view>
+        </view>-->
+    </view>
+</view>
+<!-- <view class="footer sub">待定</view> -->

@@ -1,0 +1,7 @@
+<view class="success-page">
+    <view class="h1">{{msg}}</view>
+    <view class="h2">您还可以通过推荐获得更多优惠哦</view>
+    <rule></rule>
+</view>
+<navigator class="footer2 sub" url="../index/index" open-type="switchTab">返回首页</navigator>
+<button class="footer sub" open-type="share">立即推荐</button>

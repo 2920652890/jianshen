@@ -1,0 +1,33 @@
+.home-navbar-inner {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+.home-navbar {
+  color: #fff;
+  background-color: #0245a0;
+}
+.home-navbar-inner .navbar-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.home-navbar-inner .navbar-box .navbar-left-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.home-navbar-inner .navbar-box .navbar-left-icon text {
+  font-size: 50rpx;
+  margin-right: 12rpx;
+}
+.home-navbar-inner .navbar-box .navbar-left-icon > image {
+  width: 24rpx;
+  height: 12rpx;
+}

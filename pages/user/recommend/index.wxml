@@ -1,0 +1,15 @@
+<view class="ur-page">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+        <image src="{{item.avatarUrl}}" />
+        <view class="f1">
+            <view class="h1">{{item.username}}</view>
+            <view class="h2">注册时间：{{item.registTime}}</view>
+            <view class="h3">是否充值：{{item.expensedStatus == 1 ? '是' : '否'}}</view>
+        </view>
+        <view class="tip" wx:if="{{item.expensedStatus == 1}}">已充值</view>
+    </view>
+    <navigator class="bmp" url="../../home/recommend/index">
+        <text>奖励方法</text>
+        <image src="./img/t3.png" />
+    </navigator>
+</view>

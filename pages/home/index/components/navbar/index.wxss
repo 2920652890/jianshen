@@ -1,0 +1,31 @@
+.home-navbar-inner {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+.home-navbar {
+  color: #fff;
+  background-color: #0245a0;
+}
+.home-navbar-inner .navbar-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.home-navbar-inner .navbar-box .navbar-left-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.home-navbar-inner .navbar-box .navbar-left-icon view {
+  font-size: 28rpx;
+}
+.home-navbar-inner .navbar-box .navbar-left-icon .iconfont {
+  font-size: 40rpx;
+}

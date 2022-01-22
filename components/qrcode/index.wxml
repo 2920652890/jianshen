@@ -1,0 +1,9 @@
+<view class="mask {{ show ? '' : 'none' }}">
+  <view class="qrcode-wrap" bindtap="hide">
+    <view class="qrcode-content" catchtap="handleTap">
+      <canvas style="width: 200px; height: 200px;" canvas-id="myQrcode"></canvas>
+      <view style="margin-top:10rpx">将二维码对准门禁，扫一扫即可。</view>
+      <view>如开门出现问题，请联系客服：13774320034</view>
+    </view>
+  </view>
+</view>

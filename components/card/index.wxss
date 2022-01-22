@@ -1,0 +1,40 @@
+/*公用优惠券*/
+.comm-card {
+  position: relative;
+  width: 100%;
+  height: 282rpx;
+  color: #fff;
+}
+.comm-card .sale {
+  position: absolute;
+  right: 0rpx;
+  top: 42rpx;
+  color: #fff;
+  font-size: 30rpx;
+  padding: 0 12rpx 0 22rpx;
+  background-color: #ae1a16;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+.comm-card .nm {
+  position: absolute;
+  left: 46rpx;
+  top: 66rpx;
+  font-size: 36rpx;
+}
+.comm-card .msg {
+  position: absolute;
+  left: 46rpx;
+  top: 130rpx;
+  font-size: 32rpx;
+}
+.comm-card .msg text {
+  font-size: 50rpx;
+}
+.comm-card .msg2 {
+  position: absolute;
+  left: 46rpx;
+  top: 200rpx;
+  color: #c2c2c2;
+  font-size: 24rpx;
+}

@@ -1,0 +1,20 @@
+
+
+.layer-content{
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+}
+.layer-content.lay-top{
+  left: 0;
+  top: 0;
+}
+.layer-content.lay-center{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.layer-content.lay-bottom{
+  left: 0;
+  bottom: 0;
+}

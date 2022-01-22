@@ -1,0 +1,18 @@
+<view class="order-page">
+    <block wx:if="{{load}}">
+        <block wx:if="{{list.length > 0}}">
+            <view class="item" wx:for="{{list}}" wx:key="index">
+                <view class="img">
+                    <image src="{{baseImgUrl}}{{item.productIcon}}" />
+                </view>
+                <view class="f1">
+                    <view class="h1 ell">{{item.productName}}</view>
+                    <view class="h2">会员时长：{{item.productVipDays}}天</view>
+                    <view class="h3">购买时间：{{item.createTime}}</view>
+                </view>
+                <view class="money">¥{{item.payPrice / 100}}</view>
+            </view>
+        </block>
+        <view wx:else class="tps">您还没有订单哦</view>
+    </block>
+</view>

@@ -1,0 +1,2 @@
+<image src="./img/logo2.jpeg" class="logo" mode="widthFix" />
+<button class="submit" open-type="getUserInfo" bindgetuserinfo="getUserInfo">用户登录</button>

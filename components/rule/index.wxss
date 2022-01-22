@@ -1,0 +1,54 @@
+.rule-box {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 40rpx;
+}
+
+.rule-box .title {
+  text-align: center;
+  font-size: 34rpx;
+}
+.rule-box .table {
+  margin-top: 36rpx;
+  border: 1px solid rgba(230, 229, 229, 1);
+  text-align: center;
+  color: #666666;
+  font-size: 10px;
+}
+
+.rule-box .table .col {
+  display: flex;
+  border-bottom: 1px solid rgba(230, 229, 229, 1);
+}
+.rule-box .table .col:last-child {
+  border-bottom: 0;
+}
+.rule-box .table .row {
+  flex: 1;
+  overflow: hidden;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid rgba(230, 229, 229, 1);
+}
+.rule-box .table .row:last-child {
+  border-right: 0;
+}
+.rule-box .msg {
+  margin-top: 20rpx;
+  font-size: 20rpx;
+  color: #666666;
+  padding-left: 30rpx;
+  position: relative;
+}
+.rule-box .msg::before {
+  content: "";
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #17489b;
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+  border-radius: 50%;
+}

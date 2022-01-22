@@ -1,0 +1,10 @@
+<view class="navbar" style="height:{{statusBarHeight + navH}}px;">
+  <view class="navbar-inner" style="padding-top:{{statusBarHeight}}px;">
+    <view class="navbar-box" style="height:{{navH}}px;">
+      <view class="navbar-left-icon" style="left:{{left}}px" bindtap="onBack">
+        <text class="iconfont iconhoutuibeifen"></text>
+      </view>
+      <view>{{title}}</view>
+    </view>
+  </view>
+</view>

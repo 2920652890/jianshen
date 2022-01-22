@@ -1,0 +1,162 @@
+/**global**/
+@import "./iconfont.wxss";
+page {
+  height: 100%;
+  word-break: break-all;
+  font-weight: 400;
+  font-size: 25rpx;
+}
+.tps {
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 100rpx;
+  color: #888;
+}
+.pbc {
+  background-color: #f7f4f8;
+}
+.sub {
+  height: 100rpx;
+  border-radius: 6px;
+  background-color: #0245a0;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 38rpx;
+}
+.kefu {
+  display: block;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.kefu::after {
+  border: none;
+}
+.f18 {
+  font-size: 36rpx;
+}
+.f16 {
+  font-size: 32rpx;
+}
+.f15 {
+  font-size: 30rpx;
+}
+.f14 {
+  font-size: 28rpx;
+}
+.f13 {
+  font-size: 26rpx;
+}
+.f12 {
+  font-size: 24rpx;
+}
+view,
+text,
+input,
+image,
+swiper,
+swiper-item,
+textarea,
+switch,
+slider,
+button,
+scroll-view,
+navigator {
+  box-sizing: border-box;
+}
+
+.navigator-hover {
+  background-color: transparent;
+  opacity: 1;
+}
+.none {
+  display: none !important;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.equal {
+  padding-top: 100%;
+  position: relative;
+}
+
+.equal > image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slidedown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s;
+}
+.slidedown.active {
+  max-height: 1000px;
+}
+button {
+  background-color: transparent;
+  font-size: initial;
+  padding: 0;
+  text-align: left;
+  color: inherit;
+}
+.button-hover {
+  color: inherit;
+  background-color: transparent;
+}
+button::after {
+  border: none;
+}
+.mask {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.showTwo {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.fw3 {
+  font-weight: 300;
+}
+.fw5 {
+  font-weight: 500;
+}
+.fw6 {
+  font-weight: 600;
+}
+
+.f1 {
+  flex: 1;
+  overflow: hidden;
+}

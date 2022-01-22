@@ -1,0 +1,13 @@
+{
+  "navigationBarBackgroundColor": "#17489b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "得耐健身",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "light",
+  "disableScroll": true,
+  "usingComponents": {
+    "nav": "./components/navbar/index",
+    "user-head": "../../../components/userHead/index",
+    "qrcode": "../../../components/qrcode/index"
+  }
+}

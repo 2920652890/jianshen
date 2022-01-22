@@ -1,0 +1,32 @@
+page {
+  background-color: #f7f4f8;
+}
+.success-page {
+  padding: 60rpx 20rpx 148rpx 20rpx;
+}
+.success-page .h1 {
+  color: #333333;
+  font-size: 50rpx;
+  margin-bottom: 12rpx;
+  text-align: center;
+}
+.success-page .h2 {
+  text-align: center;
+  color: #666666;
+  font-size: 24rpx;
+  margin-bottom: 52rpx;
+  height: 34rpx;
+}
+.footer {
+  position: fixed;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+.footer2 {
+  position: fixed;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 140rpx;
+  background-color: #9d9d9d;
+}

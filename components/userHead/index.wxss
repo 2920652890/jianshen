@@ -1,0 +1,14 @@
+.user-head-list {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.user-head-list > image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 1);
+}

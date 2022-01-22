@@ -1,0 +1,58 @@
+page {
+  padding-bottom: 60rpx;
+}
+.header {
+  position: relative;
+}
+
+.header .bg {
+  height: 517rpx;
+}
+
+.header .icon {
+  position: absolute;
+  width: 274rpx;
+  height: 274rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80rpx;
+}
+.header .icon .b2 {
+  position: absolute;
+  width: 22rpx;
+  height: 91rpx;
+  top: 56rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .icon .text {
+  position: absolute;
+  bottom: 65rpx;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 37rpx;
+}
+
+.h2 {
+  font-size: 48rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.section {
+  padding: 30rpx 40rpx 0 30rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.section .p {
+  margin-top: 20rpx;
+}
+
+.call {
+  margin-top: 100rpx;
+  text-align: center;
+  color: #999;
+  font-size: 24rpx;
+}

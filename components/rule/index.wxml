@@ -1,0 +1,45 @@
+<view class="rule-box">
+    <view class="title">推荐规则</view>
+    <view class="table">
+        <view class="col">
+            <view class="row"></view>
+            <view class="row">
+                月卡
+                <view>188元</view>
+            </view>
+            <view class="row">
+                季卡
+                <view>499元</view>
+            </view>
+            <view class="row">
+                半年卡
+                <view>899元</view>
+            </view>
+        </view>
+        <view class="col">
+            <view class="row" wx:for="{{list1}}" wx:key="index">
+                <view wx:if="{{item.type == 'text'}}">{{item.value}}</view>
+                <block wx:if="{{item.type == 'array'}}">
+                    <view wx:for="{{item.value}}" wx:for-index="j" wx:key="j" wx:for-item="otem">
+                        {{otem}}
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="col">
+            <view class="row" wx:for="{{list2}}" wx:key="index">
+                <view wx:if="{{item.type == 'text'}}">{{item.value}}</view>
+                <block wx:if="{{item.type == 'array'}}">
+                    <view wx:for="{{item.value}}" wx:for-index="j" wx:key="j" wx:for-item="otem">
+                        {{otem}}
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class="msg">
+        被推荐人首次被推荐成为会员时（被推荐人已经购买过会员，包括但不限于0元“新人1日体验”等，将不能算作被推荐对象），被推荐人和推荐人可以按照上述规则获得对应优惠。
+    </view>
+    <view class="msg">被推荐人在购买会员时立即获得对应的优惠好礼，推荐人在被推荐人购买会员并使用一次后获得对应优惠券。</view>
+    <view class="msg">推荐有礼活动，推荐人获得的优惠券可累加</view>
+</view>

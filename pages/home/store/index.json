@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor": "#0245a0",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "门店详情",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "light",
+  "disableScroll": true,
+  "usingComponents": {
+    "user-head": "../../../components/userHead/index",
+    "qrcode": "../../../components/qrcode/index"
+  }
+}

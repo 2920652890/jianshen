@@ -1,0 +1,22 @@
+
+.navbar-inner{
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.navbar-inner .navbar-box{
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+}
+.navbar-inner .navbar-box .navbar-left-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}

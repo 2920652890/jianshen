@@ -1,0 +1,17 @@
+<view class="recommend-page">
+    <view class="header">
+        <view class="title">我的推荐</view>
+        <view class="items">
+            <view class="item f1">
+                <view class="p">{{info.invitedCount || 0}}</view>
+                <view class="span">已注册</view>
+            </view>
+            <view class="item f1">
+                <view class="p">{{info.invitedHaveExpensed || 0}}</view>
+                <view class="span">已充值</view>
+            </view>
+        </view>
+    </view>
+    <rule></rule>
+</view>
+<button class="footer sub" open-type="share">立即推荐</button>

@@ -1,0 +1,6 @@
+.card-page {
+  padding: 20rpx 14rpx;
+}
+.comm-card {
+  margin-bottom: 20rpx;
+}
