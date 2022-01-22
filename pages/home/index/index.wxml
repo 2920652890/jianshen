@@ -3,9 +3,9 @@
         <view class="shadow">
             <swiper indicator-dots="{{true}}" indicator-active-color="#fff" autoplay="{{true}}" circular="{{true}}">
             <swiper-item>
-                    <view url="../banner/index">
+                    <navigator url="../card/index">
                         <image src="./img/221.jpg" mode="widthFix" />
-                    </view>
+                    </navigator>
                 </swiper-item>
                 <swiper-item>
                     <navigator url="../b1/index">
