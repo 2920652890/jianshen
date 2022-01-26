@@ -9,7 +9,9 @@ import {
 import { getSetting, authorize, getLocation } from "../../../utils/wxAuth";
 import { baseImgUrl } from "../../../configs/index";
 import { isLogin } from "../../../utils/wxAuth";
-
+import {
+  getCookie,
+} from "../../../utils/wxJsMethods";
 const nextPageConfig = connect((state) => state.user);
 let id = "";
 Page(
@@ -27,17 +29,29 @@ Page(
       content: "",
       fontColor: "",
     },
-    onLoad() {
-      let myComponent = this.selectComponent("#QRcode");
-      this.setData({ QRcode: myComponent });
+    onLoad () {
+      let now = Date.now()
+      let old = getCookie("LOGTIME")
+      let diff = now - old
+      if (!old) {
+        setCookie("LOGTIME", now)
+      }
+
+      if (old && diff > 30 * 24 * 3600 * 1000) {
+        this.dispatch({ type: "LOGOUT", jump: false })
+      }
+      /* else {
+        let myComponent = this.selectComponent("#QRcode");
+        this.setData({ QRcode: myComponent });
+      } */
     },
-    onShow() {
+    onShow () {
       if (this.data.log) {
         this.getNotification();
       }
       this.getList();
     },
-    async getNotification() {
+    async getNotification () {
       const {
         fontColor,
         content,
@@ -52,7 +66,7 @@ Page(
         this.countdown();
       }
     },
-    countdown() {
+    countdown () {
       let num = 5;
       this.setData({ text: `（${num}秒）后可关闭`, show: true });
       const clock = setInterval(() => {
@@ -65,14 +79,14 @@ Page(
         }
       }, 1000);
     },
-    toggle() {
+    toggle () {
       const { show, text } = this.data;
       if (text == "确定") {
         this.setData({ show: !show });
         closeNotification({ notificationId: id });
       }
     },
-    async getList() {
+    async getList () {
       const { latitude, longitude } = this.data;
       const list = (await getNearbyGymList()) || [];
       if (list.length > 0) {
@@ -86,12 +100,12 @@ Page(
       }
       this.setData({ list });
     },
-    open() {
+    open () {
       isLogin().then(() => {
         goPage("../qrcode/index");
       });
     },
-    async getLocation() {
+    async getLocation () {
       try {
         //判断是否已授权
         let result = await getSetting("userLocation");

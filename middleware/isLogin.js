@@ -2,11 +2,11 @@ import store from "../store/index";
 import qs from "../modules/query-string/index";
 import { replacePage } from "../utils/wxJsMethods";
 
-export default function(pageObj) {
+export default function (pageObj) {
   if (pageObj.onLoad) {
     const _onLoad = pageObj.onLoad;
     // 使用onLoad的话需要传递options
-    pageObj.onLoad = function(options) {
+    pageObj.onLoad = function (options) {
       if (store.getState().user.log) {
         _onLoad.call(this, options);
       } else {

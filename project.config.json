@@ -36,7 +36,7 @@
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.10.4",
+  "libVersion": "2.19.6",
   "appid": "wxfcc167651b341d4d",
   "projectname": "fitness",
   "isGameTourist": false,

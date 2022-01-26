@@ -14,11 +14,15 @@ Page(
       info: {},
       end: false
     },
-    onLoad(options) {},
-    onShow() {
-      this.getData();
+    onLoad (options) {
+
     },
-    async getData() {
+    onShow () {
+      if (this.data.log) {
+        this.getData();
+      }
+    },
+    async getData () {
       showLoading();
       const data = await getUserInfo({ userId: this.data.userId });
       this.setData({ info: data });

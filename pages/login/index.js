@@ -18,10 +18,31 @@ Page(
     loginBack,
     nextPageConfig
   )({
-    data: {},
-    onLoad(options) {},
-    async getUserInfo(e) {
+    data: {
+      canIUseGetUserProfile: false,
+    },
+    onLoad (options) {
+      if (wx.getUserProfile) {
+        this.setData({
+          canIUseGetUserProfile: true
+        })
+      }
+    },
+    getUserProfile (e) {
+      // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认
+      // 开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
+      wx.getUserProfile({
+        desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+        success: (res) => {
+          this.submit(res.userInfo)
+        }
+      })
+    },
+    async getUserInfo (e) {
       const { userInfo } = e.detail;
+      this.submit(userInfo)
+    },
+    async submit (userInfo) {
       const code = await login();
       const params = { code, userInfo: JSON.stringify(userInfo) };
       if (this.data.inviterId) {
@@ -31,6 +52,6 @@ Page(
       this.setid();
       this.login(data);
       this._back();
-    },
+    }
   })
 );

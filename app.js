@@ -1,4 +1,5 @@
 import store from './store/index.js'
+
 //app.js
 App({
   data: {},
