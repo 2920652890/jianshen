@@ -11,6 +11,7 @@ import { baseImgUrl } from "../../../configs/index";
 import { isLogin } from "../../../utils/wxAuth";
 import {
   getCookie,
+  setCookie
 } from "../../../utils/wxJsMethods";
 const nextPageConfig = connect((state) => state.user);
 let id = "";
@@ -33,7 +34,7 @@ Page(
       let now = Date.now()
       let old = getCookie("LOGTIME")
       let diff = now - old
-      if (!old) {
+      if (!old && this.data.log) {
         setCookie("LOGTIME", now)
       }
 
